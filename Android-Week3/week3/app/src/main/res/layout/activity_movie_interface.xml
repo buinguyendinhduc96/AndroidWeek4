@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context="com.example.buing.week3_group6.MovieInterface">
+
+    <ImageView
+        android:id="@+id/imgBackView"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+    <TextView
+        android:id="@+id/tvTittleDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_below="@+id/imgBackView"/>
+    <TextView
+        android:id="@+id/tvReleaseDay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_below="@id/tvTittleDetail"
+        android:textStyle="bold"/>
+    <RatingBar
+        android:id="@+id/rtBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvReleaseDay"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:stepSize="0.1"/>
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rtBar"
+        android:scrollbars="vertical"
+        android:textColor="@color/white"/>
+</RelativeLayout>
